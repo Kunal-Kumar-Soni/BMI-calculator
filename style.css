@@ -1,0 +1,141 @@
+/* Apply default margin, padding, and box-sizing to all elements, and set the font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+/* Style the body to center content and set the background color */
+body {
+  background: #0092ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Set the base font size for the HTML element */
+html {
+  font-size: 10px;
+}
+
+/* Style the section containing the BMI calculator */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  outline: 1.5rem solid #78aec3ab;
+  background: #edecec;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Style for the main heading */
+section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* Style for the input boxes container */
+section .boxes {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  width: 60%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* Style for the subheadings within input boxes */
+section .boxes h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Style for the input fields */
+section .boxes input {
+  border: none;
+  border-bottom: 0.3rem solid #0092ca;
+  outline: none;
+  width: 80%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Style for the button */
+section button {
+  width: 60%;
+  background-color: #0092ca;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Style for the button when it's active (clicked) */
+section button:active {
+  scale: 0.96;
+}
+
+/* Style for the heading displaying the BMI result */
+section h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* Style for the downward arrow */
+section h5 {
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Style for the BMI result display */
+section h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0092ca;
+  background-color: #e0e0e0;
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Style for the details paragraph */
+section p {
+  font-size: 2.5rem;
+}
+
+/* Style for the span within the details paragraph */
+section p span {
+  color: #0092ca;
+}
+
+/* Responsive design adjustments for different screen widths */
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 468px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 340px) {
+  html {
+    font-size: 7.5px;
+  }
+}

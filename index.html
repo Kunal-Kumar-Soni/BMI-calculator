@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnecting to Google Fonts for improved performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Linking to Google Fonts stylesheet for Roboto font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI calculator</title>
+  </head>
+  <body>
+    <section>
+      <h1>BMI Calculator</h1>
+
+      <!-- Container for height input -->
+      <div class="boxes">
+        <h3>Height(cm)</h3>
+        <input id="height" type="number" />
+      </div>
+
+      <!-- Container for weight input -->
+      <div class="boxes">
+        <h3>Weight(kg)</h3>
+        <input id="weight" type="number" />
+      </div>
+
+      <!-- Button to trigger BMI calculation -->
+      <button id="btn">Calculate BMI</button>
+
+      <!-- Display for BMI result -->
+      <h4>YOUR BMI IS</h4>
+      <h5 class="arrow">↓</h5>
+      <h2 id="result">00.00</h2>
+
+      <!-- Container for BMI category details -->
+      <p id="details">You are <span>______</span></p>
+    </section>
+
+    <!-- Linking to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
